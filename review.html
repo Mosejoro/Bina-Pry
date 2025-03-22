@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BINA Pro - Exam Review</title>
+    <link rel="stylesheet" href="exam.css" />
+    <style>
+      /* Additional styles for the review page */
+      .selected-marker {
+        font-weight: 500;
+        color: var(--primary-color);
+        margin-left: 5px;
+      }
+
+      .correct-marker {
+        font-weight: 500;
+        color: var(--success-green);
+        margin-left: 5px;
+      }
+
+      .explanation {
+        background: rgba(247, 181, 0, 0.1);
+        border-left: 3px solid var(--primary-color);
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      }
+
+      .explanation-title {
+        color: var(--secondary-color);
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .explanation p {
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-circle bg-circle-1"></div>
+    <div class="bg-circle bg-circle-2"></div>
+
+    <div class="pro-badge">BINA Pro</div>
+
+    <div class="container">
+      <div class="header">
+        <img src="logo.png" alt="BINA Logo" />
+        <h1>Exam Review</h1>
+      </div>
+
+      <div id="review-container">
+        <!-- Content will be loaded by JavaScript -->
+      </div>
+    </div>
+
+    <script src="review.js"></script>
+  </body>
+</html>
