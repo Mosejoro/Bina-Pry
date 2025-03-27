@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BINA Pro - Online Examination System</title>
+    <title>BINA Pry - Online Examination System</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <meta
       name="description"
-      content="BINA Pro - Advanced Online Examination System for Primary School Students"
+      content="BINA Pry - Advanced Online Examination System for Primary School Students"
     />
     <link rel="apple-touch-icon" href="logo.png" />
     <meta name="theme-color" content="#f7b500" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="another.css" />
   </head>
   <body>
-    <div class="pro-badge">Pro Version</div>
+    <div class="pro-badge">Pry Version</div>
 
     <!-- Assistant Toggle Button -->
     <div class="assistant-toggle" id="assistant-toggle">
@@ -31,16 +31,16 @@
       <i class="fas fa-times"></i>
     </div>
 
-    <!-- BINA Pro Assistant (initially hidden) -->
-    <div class="bina-pro-assistant" id="bina-pro-assistant">
+    <!-- BINA Pry Assistant (initially hidden) -->
+    <div class="bina-pro-assistant" id="bina-Pry-assistant">
       <div class="character-wrapper">
         <img
           src="../assets/standing.png"
-          alt="BINA Pro Assistant"
+          alt="BINA Pry Assistant"
           class="bina-character"
         />
         <div class="speech-bubble" id="bina-pro-message">
-          Welcome to BINA Pro! I'm here to help you succeed.
+          Welcome to BINA Pry! I'm here to help you succeed.
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
     <div class="container">
       <div class="header">
         <img src="../logo.png" alt="BINA Logo" /><br />
-        <h1>BINA Pro Examination System</h1>
+        <h1>BINA Pry Examination System</h1>
         <div id="welcome-message">
           <!-- Welcome message will be inserted here -->
         </div>
@@ -103,7 +103,7 @@
       </div>
 
       <div class="pro-features">
-        <h3><i class="fas fa-crown"></i> Pro Features Available</h3>
+        <h3><i class="fas fa-crown"></i> Pry Features Available</h3>
         <div class="features-grid">
           <div class="feature-item">
             <i class="fa-solid fa-clipboard-question"></i>
@@ -140,19 +140,16 @@
 
         // Personalized messages for Pro users
         proMessages = [
-          `Welcome back, ${userName}! Thank you for being a BINA Pro user!`,
+          `Welcome back, ${userName}! Thank you for being a BINA user!`,
           `${userName},My name is Havana,nice to meet you`,
           ` ${userName},use the detailed explanations to understand concepts better.`,
-          `${userName}, did you know you can track your progress in the Analytics section?`,
-          `Thanks for upgrading to Pro, ${userName}! You now have access to all our premium features.`,
-          `${userName}, you're among our valued Pro users who consistently perform better!`,
+          `Thanks for upgrading, ${userName}! You now have access to all our premium features.`,
+          `${userName}, you're among our valued users who consistently perform better!`,
           `Need help with a subject? Try focusing on the explanations after each question.`,
-          `${userName}, your Pro account gives you access to our latest question updates.`,
           `We appreciate your support, ${userName}! It helps us improve BINA for everyone.`,
           `${userName}, remember to check your exam history to track your improvement over time.`,
-          `Pro users like you, ${userName}, get 30 minutes for each exam - plenty of time to think!`,
-          `${userName}, try our detailed analytics to identify your strengths and weaknesses.`,
-          `Thanks for choosing BINA Pro, ${userName}! We're constantly adding new features for you.`,
+          `${userName}, get 30 minutes for each exam - plenty of time to think!`,
+          `Thanks for choosing BINA, ${userName}! We're constantly adding new features for you.`,
           `${userName}, you're now getting the full BINA experience with all 20 questions per exam!`,
           `We're glad you're here, ${userName}! Let us know if you have any feature suggestions.`,
         ];
@@ -241,7 +238,7 @@
 
         // Display welcome message
         const welcomeMessage = document.getElementById("welcome-message");
-        welcomeMessage.innerHTML = `<h2>Welcome to BINA Pro, ${userName}!</h2>`;
+        welcomeMessage.innerHTML = `<h2>Welcome to BINA, ${userName}!</h2>`;
 
         // Initialize Pro messages
         initProMessages();
