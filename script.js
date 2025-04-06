@@ -110,15 +110,14 @@ function displayQuestions(data, subject, cls) {
       B: row[2],
       C: row[3],
       D: row[4],
-      E: row[5],
     };
-    const correctAnswer = row[6];
+    const correctAnswer = row[5];
 
     // Get the question type (column H) which contains the hint
-    const questionHint = row[7] || "";
+    const questionHint = row[6] || "";
 
     // Shuffle the options while maintaining the correct mapping
-    const optionKeys = ["A", "B", "C", "D", "E"];
+    const optionKeys = ["A", "B", "C", "D"];
     const shuffledOptionKeys = shuffleArray([...optionKeys]);
 
     // Create shuffled options object
@@ -142,7 +141,7 @@ function displayQuestions(data, subject, cls) {
 
     // Get the explanation from column I
     const questionExplanation =
-      row[8] || "No explanation available for this question.";
+      row[7] || "No explanation available for this question.";
 
     questionsData.push({
       questionNumber: i + 1,

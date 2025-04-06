@@ -62,7 +62,7 @@ function displayReviewQuestions(responses) {
 
       optionsHTML += `
           <div class="option-item${optionClass}">
-            ${key}: ${value}
+            ${value}
             ${
               isSelected
                 ? ' <span class="selected-marker">(Your Answer)</span>'
