@@ -30,7 +30,7 @@
             ><i class="fas fa-lock"></i> Password</label
           >
           <i
-            class="fas fa-eye"
+            class="fas fa-eye-slash"
             id="togglePassword"
             style="
               position: absolute;
@@ -172,8 +172,8 @@
               ? "text"
               : "password";
           passwordInput.setAttribute("type", type);
-          this.classList.toggle("fa-eye");
           this.classList.toggle("fa-eye-slash");
+          this.classList.toggle("fa-eye");
         });
     </script>
   </body>
