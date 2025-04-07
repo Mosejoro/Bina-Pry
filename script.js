@@ -95,7 +95,6 @@ function displayQuestions(data, subject, cls) {
   questionsDiv.innerHTML = `
        <div class="exam-header">
       <h3>Subject: ${subject.replace(/_/g, " ")}</h3>
-      <h4>Class: Primary ${cls.substring(1)}</h4>
       <h3>Student: ${userName}</h3>
       <h3 class="Warn">Do well to answer all the questions before the time runs out.</h3>
     </div>

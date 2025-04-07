@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <div>
           <h2>Exam Review</h2>
           <h3>Subject: ${subject}</h3>
-          <h3>Class: ${classLevel}</h3>
         </div>
         <div class="filter-options">
         <button class="filter-btn active" data-filter="incorrect">Incorrect</button>
