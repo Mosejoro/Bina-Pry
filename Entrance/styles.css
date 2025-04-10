@@ -1,8 +1,4 @@
 /* Import Google Font - adding more weights for better typography */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Salsa&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 /* Root Variables - enhanced with BINA brand colors */
 :root {
   --primary-color: #f7b500; /* BINA yellow */
@@ -17,7 +13,7 @@
 
 /* Global Styles */
 body {
-  font-family: "Salsa", sans-serif;
+  font-family: "Salsa", cursive;
   background: var(--background-color);
   display: flex;
   align-items: center;

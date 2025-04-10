@@ -336,7 +336,7 @@ function setupHintCharacters() {
       if (totalHintsUsed >= MAX_TOTAL_HINTS) {
         // Update all characters to lying down
         document.querySelectorAll(".hint-character").forEach((img) => {
-          img.src = "assets/lying.png";
+          img.src = "assets/standing.png";
         });
 
         speechBubble.textContent = "I'm tired. No more hints for this exam!";
@@ -396,7 +396,7 @@ function setupHintCharacters() {
       if (totalHintsUsed >= MAX_TOTAL_HINTS) {
         setTimeout(() => {
           document.querySelectorAll(".hint-character").forEach((img) => {
-            img.src = "assets/lying.png";
+            img.src = "assets/standing.png";
           });
         }, 5000);
       } else {
