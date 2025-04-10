@@ -1,5 +1,6 @@
 /* Import Google Font - adding more weights for better typography */
 /* Root Variables - enhanced with BINA brand colors */
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
 :root {
   --primary-color: #f7b500; /* BINA yellow */
   --primary-dark: #d9a000;
