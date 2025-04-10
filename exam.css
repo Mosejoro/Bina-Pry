@@ -830,7 +830,7 @@ a:hover {
     min-width: 200px;
   }
 }
-.speech-bubble::before {
+/* .speech-bubble::before {
   content: "";
   position: absolute;
   left: -20px;
@@ -848,7 +848,7 @@ a:hover {
   border-width: 10px;
   border-style: solid;
   border-color: transparent white transparent transparent;
-}
+} */
 
 /* Show speech bubble */
 .speech-bubble.show {
@@ -918,7 +918,7 @@ a:hover {
 
   .speech-bubble {
     max-width: 150px;
-    left: 60px;
+    left: 10px;
     padding: 10px;
     font-size: 0.9rem;
   }

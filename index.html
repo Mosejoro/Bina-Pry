@@ -25,14 +25,8 @@
   <body>
     <div class="pro-badge">Primary School</div>
 
-    <!-- Assistant Toggle Button -->
-    <div class="assistant-toggle" id="assistant-toggle">
-      <i class="fas fa-robot"></i>
-      <i class="fas fa-times"></i>
-    </div>
-
-    <!-- BINA Pry Assistant (initially hidden) -->
-    <div class="bina-pro-assistant" id="bina-Pry-assistant">
+    <!-- BINA Pry Assistant (now visible by default) -->
+    <div class="bina-pro-assistant visible" id="bina-Pry-assistant">
       <div class="character-wrapper">
         <img
           src="../assets/standing.png"
@@ -134,7 +128,7 @@
       let proMessages = [];
       let currentMessageIndex = 0;
       let messageInterval;
-      let assistantVisible = false;
+      let assistantVisible = true; // Changed to true by default
 
       function initProMessages() {
         const userName = localStorage.getItem("userName") || "Student";
@@ -142,8 +136,8 @@
         // Personalized messages for Pro users
         proMessages = [
           `Welcome, ${userName}! Thank you for being a BINA user!`,
-          `${userName},My name is Havana, nice to meet you`,
-          ` ${userName},use the detailed explanations to understand questions better.`,
+          `${userName}, My name is Havana, nice to meet you`,
+          `${userName}, use the detailed explanations to understand questions better.`,
           `Thanks for upgrading, ${userName}! You now have access to all our premium features.`,
           `Need help with a subject? Try focusing on the explanations after each question.`,
           `We appreciate your support, ${userName}! It helps us improve BINA for everyone.`,
@@ -156,45 +150,17 @@
         const messageElement = document.getElementById("bina-pro-message");
         messageElement.textContent = proMessages[0];
 
-        // Set up toggle button
-        document
-          .getElementById("assistant-toggle")
-          .addEventListener("click", toggleAssistant);
-
         // Make character clickable to show next message immediately
         document
           .querySelector(".bina-character")
           .addEventListener("click", () => {
             showNextMessage();
           });
-      }
 
-      function toggleAssistant() {
-        const assistant = document.getElementById("bina-pro-assistant");
-        const toggle = document.getElementById("assistant-toggle");
-
-        if (assistantVisible) {
-          // Hide assistant
-          assistant.classList.remove("visible");
-          toggle.classList.remove("active");
-
-          // Clear the message interval
-          clearInterval(messageInterval);
-        } else {
-          // Show assistant
-          assistant.classList.add("visible");
-          toggle.classList.add("active");
-
-          // Reset message opacity
-          document.getElementById("bina-pro-message").style.opacity = 1;
-
-          // Start message rotation - every 5 seconds
-          messageInterval = setInterval(() => {
-            showNextMessage();
-          }, 5000); // 5 seconds
-        }
-
-        assistantVisible = !assistantVisible;
+        // Start message rotation automatically - every 5 seconds
+        messageInterval = setInterval(() => {
+          showNextMessage();
+        }, 5000); // 5 seconds
       }
 
       function showNextMessage() {
