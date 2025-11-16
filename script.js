@@ -86,7 +86,7 @@ function displayQuestions(data, subject, cls) {
   const shuffledQuestionRows = shuffleArray(questionRows);
 
   // Limit to 20 questions or less if there aren't enough questions
-  const limitedQuestionRows = shuffledQuestionRows.slice(0, 20);
+  const limitedQuestionRows = shuffledQuestionRows.slice(0, 15);
 
   // Get username from localStorage
   const userName = localStorage.getItem("userName") || "Student";
