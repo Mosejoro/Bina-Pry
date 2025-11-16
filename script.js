@@ -643,7 +643,7 @@ font-weight: bold;">${grade}</span></h3>
 }
 
 // Timer functionality
-const examDuration = 30 * 60; // 30 minutes in seconds
+const examDuration = 20 * 60; // 30 minutes in seconds
 let timerInterval;
 
 // Update the timer's time-up handler to ensure it properly submits
